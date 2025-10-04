@@ -1,0 +1,26 @@
+// Define an interface
+interface Vehicle {
+    void start();      // abstract method
+    void stop();       // abstract method
+}
+
+// Implement the interface
+class Car implements Vehicle {
+    @Override
+    public void start() {
+        System.out.println("Car started");
+    }
+
+    @Override
+    public void stop() {
+        System.out.println("Car stopped");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Vehicle myCar = new Car();
+        myCar.start();
+        myCar.stop();
+    }
+}
